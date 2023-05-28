@@ -20,8 +20,8 @@ to [Support of Unreal Engine features](docs/ue-features-support) page.
 
 ## Support of custom Unreal Engine builds
 
-Surreal Docs can be used with custom source-builds of Unreal Engine. When running [`init`](docs/reference/cli/init "init command") for the first time Surreal Docs will automatically determine the root directory of your custom build in the following cases:
+Surreal Docs can be used with custom source-builds of Unreal Engine. When running [init](docs/cli/init "init command") for the first time Surreal Docs will automatically determine the root directory of your custom build in the following cases:
 - When your project is located in a subdirectory of the custom-built engine;
 - When your `.uproject` has a registered association in the `EngineAssociation` field.
 
-In case the root wasn't properly detected you can choose the appropriate version manually right on the `init` screen. In case there's no proper root shown in the list, please select any version (or none), finish the initialization and manually add the root of desired UE version in the `surreal.json` file. More information on how to do it you can find in the [surreal.json reference](docs/reference/surreal-json "surreal.json reference").
+In case the root wasn't properly detected you can choose the appropriate version manually right on the `init` screen. In case there's no proper root shown in the list, please select any version (or none), finish the initialization and manually add the root of desired UE version in the `surreal.json` file. More information on how to do it you can find in the [surreal.json reference](docs/surreal-json "surreal.json reference").
