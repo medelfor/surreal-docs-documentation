@@ -1,0 +1,135 @@
+{
+    "contents": [
+        {
+            "pages": [
+                {
+                    "is_pinned": true,
+                    "page": "docs/basics/quickstart"
+                }
+            ],
+            "title": "Getting started"
+        },
+        {
+            "pages": [
+                {
+                    "page": "docs/basics/quickstart"
+                },
+                {
+                    "page": "docs/basics/requirements"
+                },
+                {
+                    "page": "docs/basics/os-and-ue-support"
+                },
+                {
+                    "page": "docs/basics/installation"
+                },
+                {
+                    "page": "docs/basics/ue-features-support"
+                },
+                {
+                    "page": "docs/basics/troubleshooting"
+                }
+            ],
+            "title": "Basics"
+        },
+        {
+            "pages": [
+                {
+                    "page": "docs/guides/generate-docs-for-blueprint-only-projects"
+                },
+                {
+                    "page": "docs/guides/generate-docs-for-plugins"
+                }
+            ],
+            "title": "Guides"
+        },
+        {
+            "pages": [
+                {
+                    "page": "docs/reference/cli"
+                },
+                {
+                    "page": "docs/reference/surreal-json"
+                },
+                {
+                    "page": "docs/reference/surreal-md"
+                },
+                {
+                    "page": "docs/reference/tags"
+                }
+            ],
+            "title": "Reference"
+        },
+        {
+            "pages": [
+                {
+                    "is_external": true,
+                    "is_pinned": false,
+                    "page": "https://medelfor.com",
+                    "title": "Medelfor"
+                },
+                {
+                    "is_external": true,
+                    "is_pinned": false,
+                    "page": "https://store.medelfor.com",
+                    "title": "Medelfor Store"
+                }
+            ],
+            "title": "Medelfor"
+        },
+        {
+            "pages": [
+                {
+                    "is_external": true,
+                    "is_pinned": false,
+                    "page": "https://github.com/medelfor/udocs-processor",
+                    "title": "Star Surreal Docs on GitHub"
+                },
+                {
+                    "is_external": true,
+                    "is_pinned": false,
+                    "page": "https://linkedin.com/company/medelfor",
+                    "title": "Follow us on LinkedIn"
+                },
+                {
+                    "is_external": true,
+                    "is_pinned": false,
+                    "page": "https://twitter.com/medelfor",
+                    "title": "Follow us on Twitter"
+                }
+            ],
+            "title": "Socials"
+        }
+    ],
+    "copyright": "Copyright © 2023, Medelfor, Limited",
+    "docs_title": "Documentation",
+    "filters": {
+        "content": {
+            "exclude": [],
+            "include": []
+        },
+        "cpp": {
+            "exclude": [],
+            "include": []
+        },
+        "do_export_private": false,
+        "native_modules": {
+            "exclude": [],
+            "include": []
+        }
+    },
+    "images_root": "images",
+    "language": "en-US",
+    "logo": "SurrealDocs.png",
+    "master": "docs/index",
+    "name": "Surreal Docs",
+    "organization": "Medelfor, Limited",
+    "tag": "",
+    "ue": {
+        "configuration": "Debug",
+        "root": "C:\\Program Files\\Epic Games\\UE_5.1",
+        "target": ""
+    },
+    "url": "surrealdocs.com",
+    "version": "1.0.1"
+}
