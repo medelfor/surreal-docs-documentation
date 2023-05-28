@@ -3,7 +3,10 @@
         {
             "pages": [
                 {
-                    "is_pinned": true,
+                    "page": "docs/index"
+                },
+                {
+                    "pinned": true,
                     "page": "docs/basics/quickstart"
                 }
             ],
@@ -13,9 +16,6 @@
             "pages": [
                 {
                     "page": "docs/basics/quickstart"
-                },
-                {
-                    "page": "docs/basics/requirements"
                 },
                 {
                     "page": "docs/basics/os-and-ue-support"
@@ -83,19 +83,19 @@
                     "is_external": true,
                     "is_pinned": false,
                     "page": "https://github.com/medelfor/udocs-processor",
-                    "title": "Star Surreal Docs on GitHub"
-                },
-                {
-                    "is_external": true,
-                    "is_pinned": false,
-                    "page": "https://linkedin.com/company/medelfor",
-                    "title": "Follow us on LinkedIn"
+                    "title": "Surreal Docs on GitHub"
                 },
                 {
                     "is_external": true,
                     "is_pinned": false,
                     "page": "https://twitter.com/medelfor",
                     "title": "Follow us on Twitter"
+                },
+                {
+                    "is_external": true,
+                    "is_pinned": false,
+                    "page": "https://linkedin.com/company/medelfor",
+                    "title": "Follow us on LinkedIn"
                 }
             ],
             "title": "Socials"
@@ -124,7 +124,7 @@
     "master": "docs/index",
     "name": "Surreal Docs",
     "organization": "Medelfor, Limited",
-    "tag": "",
+    "tag": "public preview",
     "ue": {
         "configuration": "Debug",
         "root": "C:\\Program Files\\Epic Games\\UE_5.1",

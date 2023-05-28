@@ -1,4 +1,4 @@
-# Surreal Docs Installation
+# Installation and requirements
 
 The latest version of Surreal Docs is `1.0.1-preview`
 
