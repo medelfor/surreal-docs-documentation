@@ -26,7 +26,7 @@ Surreal Docs will set up your project.
 Note that Surreal Docs changes the `.uproject` file, so before changing it,
 the system makes a backup of the file and saves it in the same directory.
 
-The `surdocs init` should be run at least once - on the initial setup of the project. You can always rerun `init` in order to reconfigure the project. More info about the `init` command can be found on the [init page](docs/cli/init "init description") in our [CLI reference](docs/cli "CLI reference").
+The `surdocs init` should be run at least once - on the initial setup of the project. You can always rerun `init` in order to reconfigure the project. More info about the `init` command can be found on the [init page](docs/cli/init "init description") of our [CLI reference](docs/cli "CLI reference").
 
 If `surdocs init` has finished successfully, then please run the next command:
 

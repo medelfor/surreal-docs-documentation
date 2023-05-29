@@ -16,7 +16,7 @@ Surreal Docs supports the following Unreal Engine versions:
 [1] For a detailed list of supported and unsupported UE-features, please refer
 to [Support of Unreal Engine features](docs/ue-features-support) page.
 
-[2] ETA is June 2023
+[2] ETA is June 2023 ([SD-1166](https://issues.internal.medelfor.com/youtrack/issue/SD-1166/Support-of-5.2-UE "SD-1166"))
 
 ## Support of custom Unreal Engine builds
 
