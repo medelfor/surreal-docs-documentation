@@ -1,6 +1,6 @@
 # Generating documentation for Blueprint-only projects
 
-Surreal Docs is able to generate documentation for Unreal Engine projects that do not contain any C++ code. In fact such generation will take much less time than the one with C++ included. This page covers a few details related to the docs generation for Blueprint-only projects.
+Surreal Docs is able to generate documentation for Unreal Engine projects that do not contain any C++ code. In fact such generation will take much less time than the one where C++ is included. This page covers a few details related to the docs generation for Blueprint-only projects.
 
 Blueprint-only generation is almost the same as the C++-included one. The only difference from the user's standpoint is the possible appearance of a window similar to the one shown below:
 

@@ -5,7 +5,7 @@ This page lists the most common problems encountered when using Surreal Docs and
 ## The common problems
 
 ``error
-title: "Can't open \`surdocs/surreal.json`"
+title: "Can't open \`surdocs/surreal.json\`"
 The problem means that Surreal Docs cannot open the documentation descriptor which should be placed in `surreal.json` file under `surdocs` directory which, in turn should be placed right in your Unreal Engine project root directory.
 
 Most probably it happened because the `init` command wasn't executed. Another probable cause is removal or renaming of either the `surdocs` directory or `surreal.json` file.
@@ -15,7 +15,14 @@ You can find more info about the `init` command on the [init page](docs/cli/init
 
 ``error
 title: "Couldn't find editor binary at \<path>" or "CreateProcess failed: The system cannot find the path specified."
-In most cases this problem is caused by the wrong Unreal Engine root specified in the `surreal.json` file. Please check the root in your `surreal.json`. More info on syntax of `surreal.json` can be found in [surreal.json reference](docs/surreal-json "surreal.json reference").
+In most cases this problem is caused by the wrong Unreal Engine root specified in the `surreal.json` file. Please check the root in your `surreal.json`. More info on the syntax of `surreal.json` can be found in [surreal.json reference](docs/surreal-json "surreal.json reference").
+``
+
+``error
+title: "No project file found"
+The usual reason for this is trying to run the `init` command from a directory which isn't a Unreal Engine project root. The root directory must contain a `.uproject` file.
+
+You can find more info about the `init` command on the [init page](docs/cli/init "init description").
 ``
 
 ``error
