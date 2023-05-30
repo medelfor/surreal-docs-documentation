@@ -4,7 +4,7 @@ This pages describes what documentation tags are available for use in the docume
 
 ### Common structure of a documentation piece
 
-A usual comment with documentation for a C++ entity may look like the following. As the general rule of thumb the documenting comment should precede any U-macro.
+A usual documentation piece for a C++ entity may look like the following. As the general rule of thumb the documentation comment should precede any U-macro.
 ```
 /**
  * @brief Brief description
@@ -21,7 +21,7 @@ class K1_API SuperWeapon : public UObject {
 ...
 ```
 
-When commenting Blueprints main rules are the same, but comment markers are dropped:
+When documenting Blueprints main rules are the same, but C++ comment markers are dropped:
 ```
 @brief Brief description
 
@@ -39,6 +39,10 @@ In the resulting documentation a Blueprint-entity that was defined in C++ will h
 For instance if the C++ comment of a `UCLASS` contains a reference to one of its Blueprint-callable `UFUNCTION`s then in the description of this class in the Blueprint API reference, the reference to this function won't lead to the function in the C++ API reference but instead will lead to the corresponding function in the Blueprint reference. However in C++ reference, the reference will lead to the C++ function.
 
 This way Surreal Docs enables user to provide two partially different documentations, with each one being adapted to its context but both being made out of the same text.
+``
+
+``note
+The documentation pieces can contain Markdown markup, but no Surreal Markdown is allowed at the moment. Please refer to [Surreal Markdown reference](docs/surreal-md "Surreal Markdown reference") for more info on the differences between Markdown and Surreal Markdown.
 ``
 
 ### What can be documented?
@@ -122,7 +126,7 @@ Provides a standalone reference to a related entity. The entity is determined by
 
 If there's need to provide several `@see` elements, they should be placed each on a separate line.
 
-For the allowed syntax of `<reference>` and mechanism of referencing, please refer to the [@ref](#@ref "@ref tag").
+For the allowed syntax of `<reference>` and mechanism of referencing, please refer to the [@ref](#ref "@ref tag").
 
 It's recommended to provide a few `@see` elements to the entities related to the one being described, so the reader would have more context.
 
@@ -152,7 +156,7 @@ C++-entities can also be deprecated with `UE_DEPRECATED(Version, Description)` m
 #### @ref
 Syntax: `@ref <reference> [text]`, can be inlined
 
-Provides an inline reference to a related entity. The entity is determined by the `<reference>` which can be the name of the referenced entity, qualified or not or a path to it. `<reference>` can be enclosed in double quotes if it contains spaces. If `[text]` is provided in the resulting documentation, the link to the referenced entity will be shown as "text" and not as "reference". `@ref` can be used inside descriptions used by other tags and inside the main description.
+Provides an inline reference to a related entity. The entity is determined by the `<reference>` which can be the name of the referenced entity, qualified or not or a path to it. `<reference>` can be enclosed in double quotes if it contains spaces. If `[text]` is provided in the resulting documentation, the link to the referenced entity will be shown as "text" and not as "reference". Inside `[text]` double quotes can be escaped with a backslash `\\`. `@ref` can be used inside descriptions used by other tags and inside the main description.
 
 The reference can be:
  - a simple name e.g. `Function`;
