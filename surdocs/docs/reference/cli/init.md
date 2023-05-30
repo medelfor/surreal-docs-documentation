@@ -10,7 +10,8 @@ The command is expected to be called from the root of an Unreal Engine projects,
 
 When called the first time, `init` starts initialization, second and more - the reconfiguration. During initialization Surreal Docs patches your project files, installs a UE-plugin to connect to the Engine, setups basic documentation and generates the main config `surdocs/surreal.json` based on the info you provide during the initialization.
 
-``note
+``seealso
+title:Note
 When reconfiguring (calling `init` the second+ time) all the changes manually made in the `surreal.json` will be preserved.
 ``
 
@@ -18,7 +19,8 @@ During initialization/reconfiguration `init` offers you to set several settings 
 
 When all setting set as desired, please press the big "Done" button and wait until Surreal Docs finishes initialization.
 
-``note
+``seealso
+title:Note
 The startup of `init` can take some time if the project is big and contains a lot of modules.
 ``
 

@@ -31,7 +31,8 @@ Upon successful initialization, please navigate to the `surdocs` folder inside y
 ```
 and remove the `/Game/` entry, so the `include` array inside the `content` object would be empty. Save your changes.
 
-``note
+``seealso
+title:Note
 More info on the syntax of `surreal.json` can be found in [surreal.json reference](docs/surreal-json "surreal.json reference").
 ``
 
@@ -39,6 +40,7 @@ Now all the necessary steps are taken and what's left is to simply run the `gene
 ```
 surdocs generate <out directory>
 ```
-``note
+``seealso
+title:Note
 More info about the `generate` command can be found on the [generate page](docs/cli/generate "generate description").
 ``

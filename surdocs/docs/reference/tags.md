@@ -33,7 +33,8 @@ several lines
 @see Some reference
 ```
 
-``note
+``seealso
+title:Note
 In the resulting documentation a Blueprint-entity that was defined in C++ will have the documentation provided in code for its C++ entity, but with all references to C++ entities replaced on the references to the corresponding Blueprint-entities if applicable. 
 
 For instance if the C++ comment of a `UCLASS` contains a reference to one of its Blueprint-callable `UFUNCTION`s then in the description of this class in the Blueprint API reference, the reference to this function won't lead to the function in the C++ API reference but instead will lead to the corresponding function in the Blueprint reference. However in C++ reference, the reference will lead to the C++ function.
@@ -41,7 +42,8 @@ For instance if the C++ comment of a `UCLASS` contains a reference to one of its
 This way Surreal Docs enables user to provide two partially different documentations, with each one being adapted to its context but both being made out of the same text.
 ``
 
-``note
+``seealso
+title:Note
 The documentation pieces can contain Markdown markup, but no Surreal Markdown is allowed at the moment. Please refer to [Surreal Markdown reference](docs/surreal-md "Surreal Markdown reference") for more info on the differences between Markdown and Surreal Markdown.
 ``
 

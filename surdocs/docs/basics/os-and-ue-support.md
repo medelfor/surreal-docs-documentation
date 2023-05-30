@@ -25,3 +25,8 @@ Surreal Docs can be used with custom source-builds of Unreal Engine. When runnin
 - When your `.uproject` has a registered association in the `EngineAssociation` field.
 
 In case the root wasn't properly detected you can choose the appropriate version manually right on the `init` screen. In case there's no proper root shown in the list, please select any version (or none), finish the initialization and manually add the root of desired UE version in the `surreal.json` file. More information on how to do it you can find in the [surreal.json reference](docs/surreal-json "surreal.json reference").
+
+``seealso
+title:Note
+Note that custom build must be based on one of the supported stock versions.
+``

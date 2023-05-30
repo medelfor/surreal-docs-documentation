@@ -16,7 +16,7 @@ and
 node --version
 ```
 
-``note
+``seealso
 title: Visual Studio
 Note also that in order to work Surreal Docs requires Microsoft Visual Studio to be installed on your machine.
 
