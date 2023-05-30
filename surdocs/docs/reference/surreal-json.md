@@ -73,13 +73,11 @@ title: An example of `surreal.json`
             "pages": [
                 {
                     "is_external": true,
-                    "is_pinned": false,
                     "page": "https://medelfor.com",
                     "title": "Medelfor"
                 },
                 {
                     "is_external": true,
-                    "is_pinned": false,
                     "page": "https://store.medelfor.com",
                     "title": "Medelfor Store"
                 }
@@ -90,19 +88,16 @@ title: An example of `surreal.json`
             "pages": [
                 {
                     "is_external": true,
-                    "is_pinned": false,
                     "page": "https://github.com/medelfor/surreal-docs",
                     "title": "Surreal Docs on GitHub"
                 },
                 {
                     "is_external": true,
-                    "is_pinned": false,
                     "page": "https://twitter.com/medelfor",
                     "title": "Follow us on Twitter"
                 },
                 {
                     "is_external": true,
-                    "is_pinned": false,
                     "page": "https://linkedin.com/company/medelfor",
                     "title": "Follow us on LinkedIn"
                 }
@@ -216,14 +211,82 @@ URL leading to the project's web-page.
 #### `version`
 
 | Type        | Can be blank | Allowed values                          |
-|-------------|--------|-----------------------------------------|
-| `string`    | Yes    | Recommended to use semver-valid version |
+|-------------|--------------|-----------------------------------------|
+| `string`    | Yes          | Recommended to use semver-valid version |
 
 Current version of the project. It's strongly recommended to use Semantic Versioning. You can read more about Semantic Versioning on its [website](https://semver.org/ "Semantic Versioning Homepage").
 
 ### Content settings
 
 #### `contents`
+
+| Type                        | Can be blank |
+|-----------------------------|--------------|
+| `array` of `object` (Group) | Yes          |
+
+Describes the basic structure of the documentation as seen in the sidebar. Consists of Group objects.
+
+##### \<Group>.`pages`
+
+| Type                       | Can be blank |
+|----------------------------|--------------|
+| `array` of `object` (Page) | Yes          |
+
+Lists the highest level pages forming this group. The order matters and will be reflected in the sidebar. Consists of Page objects.
+
+###### \<Group>.`pages`.\<Page>.`page`
+
+| Type     | Can be blank | Allowed values                                                                                                                                                            |
+|----------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `string` | No           | A valid URL, including an auto-link URL. You can find more info about auto-links in [Surreal Markdown reference](docs/surreal-md#auto-links "Surreal Markdown reference") |
+
+An URL that leads to the designated page.
+
+###### \<Group>.`pages`.\<Page>.`title`
+
+| Type     | Can be blank   |
+|----------|----------------|
+| `string` | Yes            |
+
+Title to show in the sidebar for this page.
+
+###### \<Group>.`pages`.\<Page>.`is_external`
+
+| Type   | Can be blank |
+|--------|--------------|
+| `bool` | N/A          |
+
+Whether the page is an external to the documentation. Will add little arrow on the side of page's title.
+
+###### \<Group>.`pages`.\<Page>.`api`
+
+| Type     | Can be blank                      | Allowed values             |
+|----------|-----------------------------------|----------------------------|
+| `string` | No, but can be omitted completely | One of: `cpp`, `blueprint` |
+
+Generates a link to either C++ API reference or Blueprint API reference, depending on the value. This setting can be omitted, but if presented no other settings[1] of Page object can be presented, in other words if presented `api` must be the only setting in the Page object.
+
+***
+
+[1] Except for the `pinned` setting
+
+###### \<Group>.`pages`.\<Page>.`pinned`
+
+| Type   | Can be blank |
+|--------|--------------|
+| `bool` | N/A          |
+
+Whether this page should be considered an alias of the actual page.
+
+If the `contents` contains two or more pages with the same URL, it's recommended that all of them should have `pinned` being equal `true`, except for only one (the canonical page). In such case all the pinned pages will be displayed with little pins on their sides, and they will lead to the canonical page. No additional pages will be created during generation.
+
+##### \<Group>.`title`
+
+| Type     | Can be blank   |
+|----------|----------------|
+| `string` | Yes            |
+
+Title of the sidebar section generated from this Group.
 
 #### `images_root`
 
@@ -306,9 +369,9 @@ Whether to export private entities, such as private fields, properties, function
 
 #### `ue.configuration`
 
-| Type        | Can be blank | Allowed values                                          |
-|-------------|--------------|---------------------------------------------------------|
-| `string`    | No           | `Debug`, `DebugGame`, `Development`, `Shipping`, `Test` |
+| Type        | Can be blank | Allowed values                                                  |
+|-------------|--------------|-----------------------------------------------------------------|
+| `string`    | No           | One of: `Debug`, `DebugGame`, `Development`, `Shipping`, `Test` |
 
 The configuration to compile the Unreal Engine project with. More info on why Surreal Docs needs to compile your project, please refer to the [generate](docs/cli/generate "generate command") command page.
 

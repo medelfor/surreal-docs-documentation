@@ -64,13 +64,11 @@
             "pages": [
                 {
                     "is_external": true,
-                    "is_pinned": false,
                     "page": "https://medelfor.com",
                     "title": "Medelfor"
                 },
                 {
                     "is_external": true,
-                    "is_pinned": false,
                     "page": "https://store.medelfor.com",
                     "title": "Medelfor Store"
                 }
@@ -81,19 +79,16 @@
             "pages": [
                 {
                     "is_external": true,
-                    "is_pinned": false,
                     "page": "https://github.com/medelfor/surreal-docs",
                     "title": "Surreal Docs on GitHub"
                 },
                 {
                     "is_external": true,
-                    "is_pinned": false,
                     "page": "https://twitter.com/medelfor",
                     "title": "Follow us on Twitter"
                 },
                 {
                     "is_external": true,
-                    "is_pinned": false,
                     "page": "https://linkedin.com/company/medelfor",
                     "title": "Follow us on LinkedIn"
                 }
