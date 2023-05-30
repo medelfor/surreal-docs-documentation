@@ -18,7 +18,7 @@ to [Support of Unreal Engine features](docs/ue-features-support) page.
 
 [2] ETA is June 2023 ([SD-1166](https://issues.internal.medelfor.com/youtrack/issue/SD-1166/Support-of-5.2-UE "SD-1166"))
 
-## Support of custom Unreal Engine builds
+### Support of custom Unreal Engine builds
 
 Surreal Docs can be used with custom source-builds of Unreal Engine. When running [init](docs/cli/init "init command") for the first time Surreal Docs will automatically determine the root directory of your custom build in the following cases:
 - When your project is located in a subdirectory of the custom-built engine;

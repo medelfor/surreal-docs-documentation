@@ -2,7 +2,7 @@
 
 Surreal Docs can generate documentation for Unreal Engine plugins as well. The most common application for this is when the project requiring documentation is itself a plugin. This page describes the steps necessary to generate documentation for a plugin.
 
-## Step 1: select plugin modules during `init`
+### Step 1: select plugin modules during `init`
 
 ``figure
 align:right
@@ -15,7 +15,7 @@ After you started the `init` command, using the "Modules to export" list select 
 
 You can find more info about the `init` command on the [init page](docs/cli/init "init description") of our [CLI reference](docs/cli "CLI reference").
 
-## Step 2: remove `/Game/` from `surreal.json`
+### Step 2: remove `/Game/` from `surreal.json`
 
 Upon successful initialization, please navigate to the `surdocs` folder inside your project and open the `surreal.json` file. Find the following part there:
 ```

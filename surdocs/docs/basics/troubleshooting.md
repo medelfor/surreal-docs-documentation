@@ -2,7 +2,7 @@
 
 This page lists the most common problems encountered when using Surreal Docs and explains different support options available to the Surreal Docs users.
 
-## The common problems
+### The common problems
 
 ``error
 title: "Can't open \`surdocs/surreal.json\`"
@@ -35,11 +35,11 @@ Please take a look at the session's logs to find out why the project couldn't be
 The problem is unlikely to happen with Blueprint-only projects.
 ``
 
-## Logs
+### Logs
 
 You can find your Surreal Docs logs by the following path: `%appdata%/Medelfor/SurrealDocs/logs/`
 
-## Support
+### Support
 
 If you believe there's something wrong with the tool, please create an
 issue in the [Surreal Docs GitHub repository](https://github.com/medelfor/surreal-docs "Surreal Docs GitHub repository").
