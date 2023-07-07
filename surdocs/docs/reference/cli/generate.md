@@ -26,14 +26,30 @@ The directory to dump the resulting documentation into. Will be created if doesn
 
 Disables the rich interface, `generate` provides by default. Useful when the command is called out of a script, in the so-called "unattended" mode.
 
+###### `-c`, `--clean` - purge out directory
+
+Deletes everything in the specified `out` directory before starting to generate docs. Use with caution.
+
+###### `-d`, `--deploy` - deploy documentation
+
+Indicates that deploy is required and specifies where to deploy the documentation. Expects an [access token](docs/cli/global-options#access-tokens "Access tokens") to be presented. Expects value in format `<organization>/<project>`, where `<organization>` is a Surreal Cloud organization owned by access token's owner and `<project>` is an existent project within that organization.
+
+Expects that in `surreal.json`, `version` field is filled with a [SemVer](https://semver.org/ "Semantic versioning")-compatible version. More info about `version` in [surreal.json reference](docs/surreal-json#code-version-code).
+
 ###### `-h`, `--help` - show the help
 
 Shows help regarding the command.
 
-### Example
+### Examples
 
 Generate documentation and dump it in the `out` folder:
 
 ```
 surdocs generate out
+```
+
+Generate documentation and deploy to `myproject` project of `myorg` organization:
+
+```
+surdocs generate out --deploy=myorg/myproject
 ```

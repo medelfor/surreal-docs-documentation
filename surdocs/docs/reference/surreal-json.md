@@ -225,6 +225,8 @@ URL leading to the project's web-page.
 
 Current version of the project. It's strongly recommended to use Semantic Versioning. You can read more about Semantic Versioning on its [website](https://semver.org/ "Semantic Versioning Homepage").
 
+Versions that are not SemVer-compatible cannot be used with Surreal Cloud.
+
 ### Content settings
 
 #### `contents`
