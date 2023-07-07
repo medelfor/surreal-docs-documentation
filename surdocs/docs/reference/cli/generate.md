@@ -36,6 +36,8 @@ Indicates that deploy is required and specifies where to deploy the documentatio
 
 Expects that in `surreal.json`, `version` field is filled with a [SemVer](https://semver.org/ "Semantic versioning")-compatible version. More info about `version` in [surreal.json reference](docs/surreal-json#code-version-code).
 
+In case such version is already deployed and exists in the Cloud, before deployment the Cloud version will be purged and created anew.
+
 ###### `-h`, `--help` - show the help
 
 Shows help regarding the command.

@@ -10,9 +10,11 @@ The command is expected to be called from the root of an Unreal Engine projects,
 
 This command does not require any input from the user. When finished it'll output the list of actions taken to upgrade the project.
 
+It is strictly recommended to call this command after every Surreal Docs update installed.
+
 ### Options
 
-#### `-h`, `--help` - show the help
+###### `-h`, `--help` - show the help
 
 Shows help regarding the command.
 
