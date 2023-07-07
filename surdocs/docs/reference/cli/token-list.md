@@ -16,7 +16,7 @@ Shows help regarding the command.
 
 ### Example
 
-Issue an access token.
+Print out info about all tokens ever issued by user.
 
 ```
 surdocs token list

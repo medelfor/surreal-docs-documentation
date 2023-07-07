@@ -1,6 +1,6 @@
 # migrate
 
-This page describes the `migrate` command, the command used to migrate a surreal project from an old version to a new one.
+This page describes the `migrate` command, the command used to migrate surreal projects from old versions to new ones.
 
 ### General description and syntax
 

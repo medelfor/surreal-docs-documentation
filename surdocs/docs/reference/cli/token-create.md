@@ -1,6 +1,6 @@
 # token create
 
-This page describes the `token create` command, the command used to issue an Surreal Cloud [access token](docs/cli/global-options#access-tokens "Access tokens").
+This page describes the `token create` command, the command used to issue Surreal Cloud [access tokens](docs/cli/global-options#access-tokens "Access tokens").
 
 ### General description and syntax
 

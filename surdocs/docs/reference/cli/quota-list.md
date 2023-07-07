@@ -1,6 +1,6 @@
 # quota list
 
-This page describes the `quota list` command, the command used to list usage of Surreal Cloud resources constrained by a quota.
+This page describes the `quota list` command, the command used to show usage of Surreal Cloud resources constrained by a quota.
 
 ### General description and syntax
 

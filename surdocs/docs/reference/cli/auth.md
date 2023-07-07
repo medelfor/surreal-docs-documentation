@@ -1,6 +1,6 @@
 # auth
 
-This page describes the `auth` command, the command used to save an [access token](docs/cli/global-options#access-tokens "Access tokens") in the system's vault.
+This page describes the `auth` command, the command used to save [access tokens](docs/cli/global-options#access-tokens "Access tokens") in the system's vault.
 
 ### General description and syntax
 

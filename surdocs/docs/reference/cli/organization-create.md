@@ -1,37 +1,27 @@
 # organization create
 
-This page describes the `generate` command, the command used to start the docs generation.
+This page describes the `organization create` command, the command used to create Surreal Cloud organizations.
 
 ### General description and syntax
 
-`surdocs [global options] generate [options] out`
+`surdocs [global options] organization create name`
 
-The command is expected to be called from the root of an Unreal Engine projects, i.e. in a directory that contains a `.uproject` file. The command requires current Surreal Docs project to be initialized, see the [init](docs/cli/init "Init command") command.
-
-When being executed the first time, `generate` will start compilation of the project, since it needs to compile the plugin installed during `init`. Hence, the first time execution can take longer than usual.
-
-``attention
-Unreal Engine project must be compilable in order for Surreal Docs to generate the documentation. However that does not mean that the project must include C++, it can be a [Blueprint-only project](https://docs.medelfor.com/medelfor/surreal-docs/latest/en-US/docs/generate-docs-for-blueprint-only-projects "Generating documentation for Blueprint-only projects") as well.
-``
+Creates a new organization with user as its owner. Expects an [access token](docs/cli/global-options#access-tokens "Access tokens") to be presented.
 
 ### Options
 
-#### `out` (positional, required)
+###### `name` (positional, required)
 
-The directory to dump the resulting documentation into. Will be created if doesn't exist. It's recommended to use an empty directory or a directory with already dumped documentation. It's not recommended to use the current directory as the `out` directory.
+Name of the organization to create. Can consist of alphanumerical characters of any case, hyphens and underscores. Minimal length is one character, maximal - thirty two.
 
-#### `-n`, `--non-rich` - disable interactive interface
-
-Disables the rich interface, `generate` provides by default. Useful when the command is called out of a script, in the so-called "unattended" mode.
-
-#### `-h`, `--help` - show the help
+###### `-h`, `--help` - show the help
 
 Shows help regarding the command.
 
 ### Example
 
-Generate documentation and dump it in the `out` folder:
+Create a new organization called `myorganization`.
 
 ```
-surdocs generate out
+surdocs organization create myorganization
 ```
