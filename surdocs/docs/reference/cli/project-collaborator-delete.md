@@ -1,37 +1,37 @@
 # project collaborator delete
 
-This page describes the `generate` command, the command used to start the docs generation.
+This page describes the `project collaborator delete` command, the command used to delete collaborators from Surreal Cloud projects.
 
 ### General description and syntax
 
-`surdocs [global options] generate [options] out`
+`surdocs [global options] project collaborator delete [options] location email`
 
-The command is expected to be called from the root of an Unreal Engine projects, i.e. in a directory that contains a `.uproject` file. The command requires current Surreal Docs project to be initialized, see the [init](docs/cli/init "Init command") command.
+Deletes a collaborator from a Surreal Cloud project, consequently denying them access to the project. Will ask user to confirm intention to execute deletion. Expects an [access token](docs/cli/global-options#access-tokens "Access tokens") to be presented.
 
-When being executed the first time, `generate` will start compilation of the project, since it needs to compile the plugin installed during `init`. Hence, the first time execution can take longer than usual.
-
-``attention
-Unreal Engine project must be compilable in order for Surreal Docs to generate the documentation. However that does not mean that the project must include C++, it can be a [Blueprint-only project](https://docs.medelfor.com/medelfor/surreal-docs/latest/en-US/docs/generate-docs-for-blueprint-only-projects "Generating documentation for Blueprint-only projects") as well.
-``
+Owner of the organization (which is always a collaborator) cannot be deleted from the project.
 
 ### Options
 
-#### `out` (positional, required)
+###### `location` (positional, required) - location of the project
 
-The directory to dump the resulting documentation into. Will be created if doesn't exist. It's recommended to use an empty directory or a directory with already dumped documentation. It's not recommended to use the current directory as the `out` directory.
+Location of the project where to delete a collaborator from, in format `<organization>/<project>`, where `<organization>` is a Surreal Cloud organization owned by user and `<project>` is an existing project within that documentation. 
 
-#### `-n`, `--non-rich` - disable interactive interface
+###### `email` (positional, required) - email of the Medelfor account the collaborator owns
 
-Disables the rich interface, `generate` provides by default. Useful when the command is called out of a script, in the so-called "unattended" mode.
+Email of Medelfor account owned by collaborator.
 
-#### `-h`, `--help` - show the help
+###### `-y`, `--yes` - do not ask for confirmation
+
+Confirms that deletion must be executed without prompting user.
+
+###### `-h`, `--help` - show the help
 
 Shows help regarding the command.
 
 ### Example
 
-Generate documentation and dump it in the `out` folder:
+Delete collaborator with email `employee1@company.com` from the project `myproject` of organization `myorganization`.
 
 ```
-surdocs generate out
+surdocs project collaborator delete myorganization/myproject employee1@company.com
 ```

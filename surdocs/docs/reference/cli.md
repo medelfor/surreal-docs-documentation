@@ -19,9 +19,9 @@ Contents:
  - [organization delete](docs/cli/organization-delete "Organization delete command") command - the command used to delete Surreal Cloud organizations;
  - [organization list](docs/cli/organization-list "Organization list command") command - the command used to list Surreal Cloud organizations;
  - [project announce](docs/cli/project-announce "Project announce command") command - the command used to set a project-wide announcement;
- - [project collaborator add](docs/cli/project-collaborator-add "Project collaborator add command") command - the command used to generate the documentation;
- - [project collaborator delete](docs/cli/project-collaborator-delete "Project collaborator delete command") command - the command used to delete Surreal Cloud projects;
- - [project collaborator list](docs/cli/project-collaborator-list "Project collaborator list command") command - the command used to generate the documentation;
+ - [project collaborator add](docs/cli/project-collaborator-add "Project collaborator add command") command - the command used to add collaborators to Surreal Cloud projects;
+ - [project collaborator delete](docs/cli/project-collaborator-delete "Project collaborator delete command") command - the command used to delete collaborators from Surreal Cloud projects;
+ - [project collaborator list](docs/cli/project-collaborator-list "Project collaborator list command") command - the command used to list collaborators in Surreal Cloud projects;
  - [project create](docs/cli/project-create "Project create command") command - the command used to create Surreal Cloud projects;
  - [project delete](docs/cli/project-delete "Project delete command") command - the command used to generate the documentation;
  - [project list](docs/cli/project-list "Project list command") command - the command used to list Surreal Cloud projects;

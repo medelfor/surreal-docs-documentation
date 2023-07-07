@@ -40,7 +40,7 @@ Delete version `1.1.0` of project `myproject` within an organization `myorganiza
 surdocs project delete --version=1.1.0 myorganization/myproject
 ```
 
-Delete all versions in project `myproject` within an organization `myorganization` keeping the project.
+While keeping the project delete all versions in project `myproject` within an organization `myorganization`.
 
 ```
 surdocs project delete --versions-only myorganization/myproject
