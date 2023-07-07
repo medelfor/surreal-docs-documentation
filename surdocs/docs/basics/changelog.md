@@ -5,7 +5,7 @@ Surreal Docs v1.1.0 brings full-fledged support of Surreal Cloud (incl. Surreal 
 Here's a detailed list of changes:
 
 - **Full integration of Surreal Cloud**, Surreal Cloud+ and Surreal Cloud Pro: Surreal Docs CLI now enables user to easily access and manage Surreal Cloud resources such as organizations, projects, collaborators, tokens and quotas, and most importantly it allows to easily deploy the documentation to Surreal Cloud using updated [generate](docs/cli/generate "Generate command") command. You can find more info on these pages:
-  - [Explanation](docs/cloud/surreal-cloud "Surreal Cloud") why one would need Surreal Cloud;
+  - [Explanation](docs/surreal-cloud "Surreal Cloud") why one would need Surreal Cloud;
   - Updated [generate](docs/cli/generate "Generate command") command;
   - [auth](docs/cli/auth "Auth command") command;
   - [organization create](docs/cli/organization-create "Organization create command") command;

@@ -1,20 +1,16 @@
 # Installation and requirements
 
-The latest version of Surreal Docs is `1.0.1-preview`
+The latest version of Surreal Docs is `1.1.0`
 
-We publish installers of new Surreal Docs versions on the "Releases" page in 
+We publish releases of new Surreal Docs versions on the "Releases" page in 
 [our GitHub](https://github.com/medelfor/surreal-docs/releases/ "Releases").
 
-To install Surreal Docs please download the latest installer from the "Releases" page and run it. Note, that in order to work correctly Surreal Docs requires NodeJS (at least 10.18.1) to be installed with `npm` being available in the `PATH` environment variable. If no NodeJS is already installed on your system, Surreal Docs installer will install an appropriate version (18.16.0) automatically.
+To install Surreal Docs please download the latest installer from our website and run it. The installer will do everything necessary to set up Surreal Docs on your system.
 
-You can check whether the `npm` and NodeJS are available on your system by running the following commands:
-```
-npm --version
-```
-and
-```
-node --version
-```
+``attention
+title: Troubleshooting installation
+In case something goes wrong during installation, please refer to the [troubleshooting](docs/troubleshooting) page to find advice on how to address it.
+``
 
 ``seealso
 title: Visual Studio

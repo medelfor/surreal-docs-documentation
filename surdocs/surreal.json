@@ -39,6 +39,14 @@
         {
             "pages": [
                 {
+                    "page": "docs/cloud/surreal-cloud"
+                }
+            ],
+            "title": "Surreal Cloud"
+        },
+        {
+            "pages": [
+                {
                     "page": "docs/guides/generate-docs-for-blueprint-only-projects"
                 },
                 {
@@ -46,17 +54,12 @@
                 },
                 {
                     "page": "docs/guides/generate-docs-for-content-only-plugins"
+                },
+                {
+                    "page": "docs/guides/cpp-only-blueprint-only"
                 }
             ],
             "title": "Guides"
-        },
-        {
-            "pages": [
-                {
-                    "page": "docs/cloud/surreal-cloud"
-                }
-            ],
-            "title": "Surreal Cloud"
         },
         {
             "pages": [
@@ -126,7 +129,7 @@
     "images_root": "images",
     "language": "en-US",
     "logo": "SurrealDocs.png",
-    "master": "docs/index",
+    "master": "index",
     "name": "Surreal Docs",
     "organization": "Medelfor, Limited",
     "tag": "public preview",

@@ -1,7 +1,12 @@
 # CLI reference
 
-Contains the following pages:
+Surreal Docs CLI allows user to interact with Surreal Docs and Surreal Cloud using a commandline such as PowerShell or Windows CMD.
 
+``attention
+We strongly discourage usage of `git bash` terminal as it does not support several features vital for Surreal Docs to operate correctly.
+``
+
+Contents:
  - [Global options](docs/cli/global-options "Global options") - describes what global options are available when using Surreal Docs CLI;
  - [init](docs/cli/init "Init command") command - the command initializing/reconfiguring the Surreal Docs project.
  - [generate](docs/cli/generate "Generate command") command - the command used to generate the documentation;

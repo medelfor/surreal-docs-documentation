@@ -8,11 +8,12 @@ This page describes options available in the `surreal.json`. There's no optional
 title: An example of `surreal.json`
 ```
 {
+    "contact_me_at": "dev@medelfor.com",
     "contents": [
         {
             "pages": [
                 {
-                    "page": "docs/index"
+                    "page": "index"
                 },
                 {
                     "pinned": true,
@@ -149,6 +150,14 @@ title: An example of `surreal.json`
 | `string`    | Yes          |
 
 Full copyright notice, e.g. "Copyright © 2023, My Company". If left blank, in the documentation the copyright will be generated based on the organization name. 
+
+#### `contact_me_at`
+
+| Type        | Can be blank |
+|-------------|--------------|
+| `string`    | Yes          |
+
+Any contact mean with which we can contact you in case you send us logs through the CLI. Examples include `name.name@example.com`, `Person at Twitter`, `u/CoolGuy`. Note that there's no particular format for this field. Please leave the field empty if you don't want us to contact you back regarding reported logs.
 
 #### `docs_title`
 
@@ -300,7 +309,7 @@ The path to the directory where all documentation's images are stored. It's not 
 
 | Type        | Can be blank | Allowed values                                                                                              |
 |-------------|--------------|-------------------------------------------------------------------------------------------------------------|
-| `string`    | No           | A valid path (as in filesystem) to the home page without extension. Page must be relative to `surreal.json` |
+| `string`    | No           | A valid URL, including an auto-link URL. You can find more info about auto-links in [Surreal Markdown reference](docs/surreal-md#auto-links "Surreal Markdown reference") |
 
 The path to the main documentation page.
 
@@ -329,6 +338,8 @@ This option is not implemented yet
 
 List of directories where to search for C++ entities that should be included in the resulting documentation.
 
+`filters.cpp` and `filter.native_modules` are not strictly dependent on each other and emptying one of them can be used to generate documentation of only one type: BP reference or C++ reference. You can find more info on [Generate docs for C++ only or Blueprint only](docs/cpp-only-blueprint-only "Generate docs for C++ only or Blueprint only") page.
+
 #### `filters.cpp.exclude`
 
 
@@ -337,6 +348,8 @@ List of directories where to search for C++ entities that should be included in 
 | `array` of `string` | Yes          | List of absolute[1] paths to directories where not to look for C++ sources |
 
 List of directories containing C++ entities that should be excluded from the resulting documentation.
+
+`filters.cpp` and `filter.native_modules` are not strictly dependent on each other and emptying one of them can be used to generate documentation of only one type: BP reference or C++ reference. You can find more info on [Generate docs for C++ only or Blueprint only](docs/cpp-only-blueprint-only "Generate docs for C++ only or Blueprint only") page.
 
 ***
 
@@ -349,6 +362,8 @@ List of directories containing C++ entities that should be excluded from the res
 | `array` of `string` | Yes          | List of native modules to export |
 
 List of names of native modules that need to be exported. The name of a module is the `<name>` part when using standard Unreal Engine format `/Script/<name>.Entity`.
+
+`filters.cpp` and `filter.native_modules` are not strictly dependent on each other and emptying one of them can be used to generate documentation of only one type: BP reference or C++ reference. You can find more info on [Generate docs for C++ only or Blueprint only](docs/cpp-only-blueprint-only "Generate docs for C++ only or Blueprint only") page.
 
 #### `filters.native_modules.exclude`
 

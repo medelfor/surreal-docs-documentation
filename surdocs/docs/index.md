@@ -12,6 +12,11 @@ Useful links:
  - [Surreal Docs GitHub](https://github.com/medelfor/surreal-docs "Surreal Docs GitHub")
  - [Surreal Docs Live Demo](https://surrealdocs.com/medelfor/showcase-1 "Surreal Docs Live Demo")
 
+``note
+title: Public Preview
+Note that since Surreal Docs, Surreal Cloud, Surreal Cloud+ and Surreal Cloud Pro are in public preview, some functionality may not work as expected.
+``
+
 ``warning
 title: Licensing
 Any individual or an organization that uses Surreal Docs to generate

@@ -35,6 +35,23 @@ Please take a look at the session's logs to find out why the project couldn't be
 The problem is unlikely to happen with Blueprint-only projects.
 ``
 
+``error
+title: "Integrity check failed"
+Can happen for different reasons. In case you recently installed a new version of Surreal Docs over an old one already presented in the system, please do the following: navigate to `%ProgramFiles%/Medelfor/SurrealDocs` and remove everything presented inside, then install the new version of Surreal Docs again.
+``
+
+### The common installation problems
+
+``error
+title: Unable to download Html2png
+Please check your internet connection and disk space. Disk must have at least 1GB free.
+``
+
+``error
+title: Unable to extract Html2png
+Please check your disk space. Disk must have at least 1GB free.
+``
+
 ### Logs
 
 You can find your Surreal Docs logs by the following path: `%appdata%/Medelfor/SurrealDocs/logs/`
