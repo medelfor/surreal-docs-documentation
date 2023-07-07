@@ -18,6 +18,11 @@ title: Public Preview
 Surreal Docs, Surreal Cloud, Surreal Cloud+ and Surreal Cloud Pro are in public preview. Some functionality may not work as expected.
 ``
 
+``seealso
+title: Contribute to Surreal Docs documentation
+If you want to add or change something in this documentation, please make a pull request to its [Github repository](https://github.com/medelfor/surreal-docs-documentation "Github repository").
+``
+
 ``warning
 title: Licensing
 Any individual or an organization that uses Surreal Docs to generate

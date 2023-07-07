@@ -10,7 +10,7 @@ a console/terminal of your choice (Windows CMD, PowerShell, etc.) and navigate t
 root directory[1] of your Unreal Engine project.
 
 ``attention
-We strongly discourage usage of `git bash` terminal as it does not support several features vital for Surreal Docs to operate correctly.
+We strongly discourage usage of `git bash` terminal as it does not support several features vital for Surreal Docs in order to operate correctly.
 ``
 
 When done, please run the following command in your console:

@@ -1,37 +1,41 @@
 # project publish
 
-This page describes the `generate` command, the command used to start the docs generation.
+This page describes the `project publish` command, the command used to change visibility of Surreal Cloud projects.
 
 ### General description and syntax
 
-`surdocs [global options] generate [options] out`
+`surdocs [global options] project publish [options] location`
 
-The command is expected to be called from the root of an Unreal Engine projects, i.e. in a directory that contains a `.uproject` file. The command requires current Surreal Docs project to be initialized, see the [init](docs/cli/init "Init command") command.
-
-When being executed the first time, `generate` will start compilation of the project, since it needs to compile the plugin installed during `init`. Hence, the first time execution can take longer than usual.
-
-``attention
-Unreal Engine project must be compilable in order for Surreal Docs to generate the documentation. However that does not mean that the project must include C++, it can be a [Blueprint-only project](https://docs.medelfor.com/medelfor/surreal-docs/latest/en-US/docs/generate-docs-for-blueprint-only-projects "Generating documentation for Blueprint-only projects") as well.
-``
+Changes visibility of a project inside an organization which user must own. Expects an [access token](docs/cli/global-options#access-tokens "Access tokens") to be presented.
 
 ### Options
 
-#### `out` (positional, required)
+###### `location` (positional, required) - location of the project
 
-The directory to dump the resulting documentation into. Will be created if doesn't exist. It's recommended to use an empty directory or a directory with already dumped documentation. It's not recommended to use the current directory as the `out` directory.
+Location of the project whose visibility needs to be changed, in format `<organization>/<project>`, where `<organization>` is a Surreal Cloud organization owned by user and `<project>` is an existing project within that documentation. 
 
-#### `-n`, `--non-rich` - disable interactive interface
-
-Disables the rich interface, `generate` provides by default. Useful when the command is called out of a script, in the so-called "unattended" mode.
-
-#### `-h`, `--help` - show the help
+###### `-h`, `--help` - show the help
 
 Shows help regarding the command.
 
+#### Scope group
+
+One of the flags in this group must be presented. 
+
+###### `-p`, `--public` - make project public
+
+Makes project public and available to the Internet.
+
+###### `-r`, `--private` - make project private
+
+Makes project private and available only to collaborators added by user. [project collaborator add](docs/cli/project-collaborator-add "Project collaborator add") can be used to add collaborators and [project collaborator list](docs/cli/project-collaborator-list "Project collaborator list") to list them.
+
+Note that in order to make a project private, user's Surreal Cloud plan has to allow private hosting. Check out [Surreal Cloud](docs/surreal-cloud) page to find out which ones do allow that.
+
 ### Example
 
-Generate documentation and dump it in the `out` folder:
+Make project `myproject` within an organization `myorganization` private.
 
 ```
-surdocs generate out
+surdocs project publish --private myorganization/myproject
 ```

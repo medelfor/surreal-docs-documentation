@@ -3,7 +3,7 @@
 Surreal Docs CLI allows user to interact with Surreal Docs and Surreal Cloud using a commandline such as PowerShell or Windows CMD.
 
 ``attention
-We strongly discourage usage of `git bash` terminal as it does not support several features vital for Surreal Docs to operate correctly.
+We strongly discourage usage of `git bash` terminal as it does not support several features vital for Surreal Docs in order to operate correctly.
 ``
 
 Contents:
@@ -25,7 +25,7 @@ Contents:
  - [project create](docs/cli/project-create "Project create command") command - the command used to create Surreal Cloud projects;
  - [project delete](docs/cli/project-delete "Project delete command") command - the command used to generate the documentation;
  - [project list](docs/cli/project-list "Project list command") command - the command used to generate the documentation;
- - [project publish](docs/cli/project-publish "Project publish command") command - the command used to generate the documentation;
+ - [project publish](docs/cli/project-publish "Project publish command") command - the command used to change visibility of Surreal Cloud projects.;
 
 ``contents
 cli/global-options

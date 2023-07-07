@@ -10,7 +10,7 @@ Creates a new organization with user as its owner. Expects an [access token](doc
 
 ### Options
 
-###### `name` (positional, required)
+###### `name` (positional, required) - name of the organization
 
 Name of the organization to create. Can consist of alphanumerical characters of any case, hyphens and underscores. Minimal length is one character, maximal - thirty two.
 

@@ -10,9 +10,11 @@ Creates a new project inside an organization which user must own. Automatically 
 
 ### Options
 
-###### `location` (positional, required)
+###### `location` (positional, required) - location of the project
 
 Location of the project to create in format `<organization>/<project>`, where `<organization>` is a Surreal Cloud organization owned by user. `<project>` can consist of alphanumerical characters of any case, hyphens and underscores. Minimal length is one character, maximal - thirty two.
+
+By default, a newly created project is public. You can change its visibility using [project publish](docs/cli/project-publish "Project publish").
 
 ###### `-h`, `--help` - show the help
 
@@ -23,5 +25,5 @@ Shows help regarding the command.
 Create a new project `myproject` within an organization called `myorganization`.
 
 ```
-surdocs organization project myorganization/myproject
+surdocs project create myorganization/myproject
 ```

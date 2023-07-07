@@ -18,7 +18,7 @@ Unreal Engine project must be compilable in order for Surreal Docs to generate t
 
 ### Options
 
-###### `out` (positional, required)
+###### `out` (positional, required) - output directory
 
 The directory to dump the resulting documentation into. Will be created if doesn't exist. It's recommended to use an empty directory or a directory with already dumped documentation. It's not recommended to use the current directory as the `out` directory.
 
