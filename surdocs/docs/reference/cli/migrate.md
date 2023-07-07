@@ -4,7 +4,7 @@ This page describes the `migrate` command, the command used to migrate surreal p
 
 ### General description and syntax
 
-`surdocs [global options] migrate`
+`surdocs [global options] migrate [options]`
 
 The command is expected to be called from the root of an Unreal Engine projects, i.e. in a directory that contains a `.uproject` file. The command requires current Surreal Docs project to be initialized, see the [init](docs/cli/init "Init command") command.
 

@@ -4,7 +4,7 @@ This page describes the `quota list` command, the command used to show usage of 
 
 ### General description and syntax
 
-`surdocs [global options] quota list`
+`surdocs [global options] quota list [options]`
 
 Expects an [access token](docs/cli/global-options#access-tokens "Access tokens") to be presented.  Prints out the list of all limited resources available to the token's owner and the current level of their consumption. 
 

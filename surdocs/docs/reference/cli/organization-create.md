@@ -4,7 +4,7 @@ This page describes the `organization create` command, the command used to creat
 
 ### General description and syntax
 
-`surdocs [global options] organization create name`
+`surdocs [global options] organization create [options] name`
 
 Creates a new organization with user as its owner. Expects an [access token](docs/cli/global-options#access-tokens "Access tokens") to be presented.
 

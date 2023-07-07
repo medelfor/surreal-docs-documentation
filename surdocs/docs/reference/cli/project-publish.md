@@ -20,7 +20,7 @@ Shows help regarding the command.
 
 #### Scope group
 
-One of the flags in this group must be presented. 
+One of the flags in this group must be presented. The flags are mutually exclusive.
 
 ###### `-p`, `--public` - make project public
 

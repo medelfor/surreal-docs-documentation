@@ -4,7 +4,7 @@ This page describes the `project create` command, the command used to create Sur
 
 ### General description and syntax
 
-`surdocs [global options] project create location`
+`surdocs [global options] project create [options] location`
 
 Creates a new project inside an organization which user must own. Automatically adds owner as collaborator. Expects an [access token](docs/cli/global-options#access-tokens "Access tokens") to be presented.
 

@@ -4,7 +4,7 @@ This page describes the `auth` command, the command used to save [access tokens]
 
 ### General description and syntax
 
-`surdocs [global options] auth`
+`surdocs [global options] auth [options]`
 
 Expects a valid access token to be presented in the standard input.
 

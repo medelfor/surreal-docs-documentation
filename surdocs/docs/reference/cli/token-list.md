@@ -4,7 +4,7 @@ This page describes the `token list` command, the command used to list [access t
 
 ### General description and syntax
 
-`surdocs [global options] token list`
+`surdocs [global options] token list [options]`
 
 This command will open system's default browser and will ask user to log in their Medelfor account. User must have an active Surreal Cloud, Surreal Cloud+ or Surreal Cloud Pro subscription in order to be able to issue access tokens. [token create](docs/cli/token-create "Token create command") command can be used to issue new access tokens.
 
