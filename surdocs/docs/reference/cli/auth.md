@@ -1,37 +1,27 @@
 # auth
 
-This page describes the `generate` command, the command used to start the docs generation.
+This page describes the `auth` command, the command used to save an [access token](docs/cli/global-options#access-tokens "Access tokens") in the system's vault.
 
 ### General description and syntax
 
-`surdocs [global options] generate [options] out`
+`surdocs [global options] auth`
 
-The command is expected to be called from the root of an Unreal Engine projects, i.e. in a directory that contains a `.uproject` file. The command requires current Surreal Docs project to be initialized, see the [init](docs/cli/init "Init command") command.
+Expects a valid access token to be presented in the standard input.
 
-When being executed the first time, `generate` will start compilation of the project, since it needs to compile the plugin installed during `init`. Hence, the first time execution can take longer than usual.
-
-``attention
-Unreal Engine project must be compilable in order for Surreal Docs to generate the documentation. However that does not mean that the project must include C++, it can be a [Blueprint-only project](https://docs.medelfor.com/medelfor/surreal-docs/latest/en-US/docs/generate-docs-for-blueprint-only-projects "Generating documentation for Blueprint-only projects") as well.
-``
+When a valid token is saved in the vault, execution of other commands dependent on a token does not require user to provide a token, since it will be automatically loaded from the vault.
 
 ### Options
 
-#### `out` (positional, required)
-
-The directory to dump the resulting documentation into. Will be created if doesn't exist. It's recommended to use an empty directory or a directory with already dumped documentation. It's not recommended to use the current directory as the `out` directory.
-
-#### `-n`, `--non-rich` - disable interactive interface
-
-Disables the rich interface, `generate` provides by default. Useful when the command is called out of a script, in the so-called "unattended" mode.
-
-#### `-h`, `--help` - show the help
+###### `-h`, `--help` - show the help
 
 Shows help regarding the command.
 
 ### Example
 
-Generate documentation and dump it in the `out` folder:
+Print out the access token to the CLI's standard input and save it in the vault.
 
 ```
-surdocs generate out
+echo "cld_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" | surdocs auth
 ```
+
+Note that this is not strictly safe. For a more secure variant refer to the [Access tokens](docs/cli/global-options#access-tokens "Access tokens") section.

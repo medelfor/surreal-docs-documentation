@@ -53,3 +53,13 @@ echo "cld_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" | surdocs project list
 It's not recommended to use this variant, since command line's history most probably will store the command and the access token what cannot be considered secure.
 
 Secure way to do that would be to manually save your token in a file, and then using `cat` or a similar command, output the token the from file into the Surreal Docs CLI.
+
+### Miscellaneous
+
+###### `-h`, `--help` - show the help
+
+Shows help regarding the CLI usage.
+
+###### `-v`, `--version` - show Surreal Docs version
+
+Prints out the current Surreal Docs version.
