@@ -33,6 +33,8 @@ The most often reason of this error is a failed build during execution of the
 Please take a look at the session's logs to find out why the project couldn't be compiled. Also try to compile it from within your IDE of choice.
 
 The problem is unlikely to happen with Blueprint-only projects.
+
+If logs contain lines similar to "Unable to instantiate module 'UnrealEd'", it means that the Target that was selected during `init` is not an Editor target. Only Editor targets are supported.
 ``
 
 ``error
