@@ -8,6 +8,10 @@
                 {
                     "pinned": true,
                     "page": "docs/basics/quickstart"
+                },
+                {
+                    "pinned": true,
+                    "page": "docs/basics/changelog"
                 }
             ],
             "title": "Getting started"
@@ -39,9 +43,20 @@
                 },
                 {
                     "page": "docs/guides/generate-docs-for-plugins"
+                },
+                {
+                    "page": "docs/guides/generate-docs-for-content-only-plugins"
                 }
             ],
             "title": "Guides"
+        },
+        {
+            "pages": [
+                {
+                    "page": "docs/cloud/surreal-cloud"
+                }
+            ],
+            "title": "Surreal Cloud"
         },
         {
             "pages": [
@@ -86,11 +101,6 @@
                     "is_external": true,
                     "page": "https://twitter.com/medelfor",
                     "title": "Follow us on Twitter"
-                },
-                {
-                    "is_external": true,
-                    "page": "https://linkedin.com/company/medelfor",
-                    "title": "Follow us on LinkedIn"
                 }
             ],
             "title": "Socials"
@@ -126,5 +136,5 @@
         "target": ""
     },
     "url": "surrealdocs.com",
-    "version": "1.0.1"
+    "version": "1.1.0"
 }

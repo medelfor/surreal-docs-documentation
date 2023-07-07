@@ -4,19 +4,17 @@ Surreal Docs is intended to be used with 64-bit Windows systems, Windows 10 in p
 
 Surreal Docs supports the following Unreal Engine versions:
 
-| Unreal Engine version | Support [1]    |
-|-----------------------|----------------|
-| 4.27                  | Yes            |
-| 5.0                   | Yes            |
-| 5.1                   | Yes            |
-| 5.2                   | On the way [2] |
+| Unreal Engine version | Support [1] |
+|-----------------------|-------------|
+| 4.27                  | Yes         |
+| 5.0                   | Yes         |
+| 5.1                   | Yes         |
+| 5.2                   | Yes         |
 
 ***
 
 [1] For a detailed list of supported and unsupported UE-features, please refer
 to [Support of Unreal Engine features](docs/ue-features-support) page.
-
-[2] ETA is June 2023 ([SD-1166](https://issues.internal.medelfor.com/youtrack/issue/SD-1166/Support-of-5.2-UE "SD-1166"))
 
 ### Support of custom Unreal Engine builds
 

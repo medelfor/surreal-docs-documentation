@@ -4,7 +4,7 @@ This page describes what global options are available when using Surreal Docs CL
 
 ### Telemetry
 
-#### `--no-tele` - disable telemetry
+###### `--no-tele` - disable telemetry
 
 Disables telemetry until the current command finishes execution. When running the next command, one still needs to provide the CLI with this parameter if they wish to continue work with disabled telemetry.
 
