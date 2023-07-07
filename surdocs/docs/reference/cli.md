@@ -16,11 +16,11 @@ Contents:
  - [token list](docs/cli/token-list "Token list command") command - the command used to list [access tokens](docs/cli/global-options#access-tokens "Access tokens") issued by user;
  - [quota list](docs/cli/quota-list "Quota list command") command - the command used to show usage of Surreal Cloud resources constrained by a quota;
  - [organization create](docs/cli/organization-create "Organization create command") command - the command used to create Surreal Cloud organizations;
- - [organization delete](docs/cli/organization-delete "Organization delete command") command - the command used to generate the documentation;
+ - [organization delete](docs/cli/organization-delete "Organization delete command") command - the command used to delete Surreal Cloud organizations;
  - [organization list](docs/cli/organization-list "Organization list command") command - the command used to list Surreal Cloud organizations;
  - [project announce](docs/cli/project-announce "Project announce command") command - the command used to set a project-wide announcement;
  - [project collaborator add](docs/cli/project-collaborator-add "Project collaborator add command") command - the command used to generate the documentation;
- - [project collaborator delete](docs/cli/project-collaborator-delete "Project collaborator delete command") command - the command used to generate the documentation;
+ - [project collaborator delete](docs/cli/project-collaborator-delete "Project collaborator delete command") command - the command used to delete Surreal Cloud projects;
  - [project collaborator list](docs/cli/project-collaborator-list "Project collaborator list command") command - the command used to generate the documentation;
  - [project create](docs/cli/project-create "Project create command") command - the command used to create Surreal Cloud projects;
  - [project delete](docs/cli/project-delete "Project delete command") command - the command used to generate the documentation;

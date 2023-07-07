@@ -1,37 +1,53 @@
 # project delete
 
-This page describes the `generate` command, the command used to start the docs generation.
+This page describes the `project delete` command, the command used to delete Surreal Cloud projects.
 
 ### General description and syntax
 
-`surdocs [global options] generate [options] out`
+`surdocs [global options] project delete [options] location`
 
-The command is expected to be called from the root of an Unreal Engine projects, i.e. in a directory that contains a `.uproject` file. The command requires current Surreal Docs project to be initialized, see the [init](docs/cli/init "Init command") command.
+Deletes the whole project; all versions, but keeps the project; a specific version. Will ask user to confirm intention to execute deletion. Expects an [access token](docs/cli/global-options#access-tokens "Access tokens") to be presented.
 
-When being executed the first time, `generate` will start compilation of the project, since it needs to compile the plugin installed during `init`. Hence, the first time execution can take longer than usual.
-
-``attention
-Unreal Engine project must be compilable in order for Surreal Docs to generate the documentation. However that does not mean that the project must include C++, it can be a [Blueprint-only project](https://docs.medelfor.com/medelfor/surreal-docs/latest/en-US/docs/generate-docs-for-blueprint-only-projects "Generating documentation for Blueprint-only projects") as well.
-``
+If neither `--version` nor `--versions-only` is presented, then deletes the project completely.
 
 ### Options
 
-#### `out` (positional, required)
+###### `location` (positional, required) - location of the project
 
-The directory to dump the resulting documentation into. Will be created if doesn't exist. It's recommended to use an empty directory or a directory with already dumped documentation. It's not recommended to use the current directory as the `out` directory.
+Location of the project where to perform deletion, in format `<organization>/<project>`, where `<organization>` is a Surreal Cloud organization owned by user and `<project>` is an existing project within that documentation. 
 
-#### `-n`, `--non-rich` - disable interactive interface
-
-Disables the rich interface, `generate` provides by default. Useful when the command is called out of a script, in the so-called "unattended" mode.
-
-#### `-h`, `--help` - show the help
+###### `-h`, `--help` - show the help
 
 Shows help regarding the command.
 
-### Example
+###### `-y`, `--yes` - do not ask for confirmation
 
-Generate documentation and dump it in the `out` folder:
+Confirms that deletion must be executed without prompting user.
+
+###### `-v`, `--version` - specific version which must be deleted
+
+Deletes only this specific version from the project. Mutually exclusive with `--versions-only`.
+
+###### `-i`, `--versions-only` - delete all versions from the project but keep the project
+
+Delete all versions from the project but do not delete the project itself.
+
+### Examples
+
+Delete version `1.1.0` of project `myproject` within an organization `myorganization`.
 
 ```
-surdocs generate out
+surdocs project delete --version=1.1.0 myorganization/myproject
+```
+
+Delete all versions in project `myproject` within an organization `myorganization` keeping the project.
+
+```
+surdocs project delete --versions-only myorganization/myproject
+```
+
+Delete the project `myproject` within an organization `myorganization` completely.
+
+```
+surdocs project delete myorganization/myproject
 ```
