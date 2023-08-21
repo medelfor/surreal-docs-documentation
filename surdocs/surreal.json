@@ -1,16 +1,27 @@
 {
+    "contact_me_at": "",
     "contents": [
         {
             "pages": [
                 {
+                    "is_external": false,
+                    "is_pinned": false,
                     "page": "docs/index"
                 },
                 {
-                    "pinned": true,
+                    "is_external": false,
+                    "is_pinned": false,
                     "page": "docs/basics/quickstart"
                 },
                 {
-                    "pinned": true,
+                    "is_external": true,
+                    "is_pinned": false,
+                    "title": "Surreal Docs: Paid vs Free",
+                    "page": "https://medelfor.com/products/surreal-docs#pricing"
+                },
+                {
+                    "is_external": false,
+                    "is_pinned": false,
                     "page": "docs/basics/changelog"
                 }
             ],
@@ -19,19 +30,34 @@
         {
             "pages": [
                 {
+                    "is_external": false,
+                    "is_pinned": false,
                     "page": "docs/basics/quickstart"
                 },
                 {
+                    "is_external": false,
+                    "is_pinned": false,
                     "page": "docs/basics/os-and-ue-support"
                 },
                 {
+                    "is_external": false,
+                    "is_pinned": false,
                     "page": "docs/basics/installation"
                 },
                 {
+                    "is_external": false,
+                    "is_pinned": false,
                     "page": "docs/basics/ue-features-support"
                 },
                 {
+                    "is_external": false,
+                    "is_pinned": false,
                     "page": "docs/basics/troubleshooting"
+                },
+                {
+                    "is_external": false,
+                    "is_pinned": false,
+                    "page": "docs/basics/licensing"
                 }
             ],
             "title": "Basics"
@@ -39,7 +65,10 @@
         {
             "pages": [
                 {
-                    "page": "docs/cloud/surreal-cloud"
+                    "is_external": true,
+                    "is_pinned": false,
+                    "title": "Surreal Cloud",
+                    "page": "https://medelfor.com/products/surreal-cloud"
                 }
             ],
             "title": "Surreal Cloud"
@@ -47,15 +76,23 @@
         {
             "pages": [
                 {
+                    "is_external": false,
+                    "is_pinned": false,
                     "page": "docs/guides/generate-docs-for-blueprint-only-projects"
                 },
                 {
+                    "is_external": false,
+                    "is_pinned": false,
                     "page": "docs/guides/generate-docs-for-plugins"
                 },
                 {
+                    "is_external": false,
+                    "is_pinned": false,
                     "page": "docs/guides/generate-docs-for-content-only-plugins"
                 },
                 {
+                    "is_external": false,
+                    "is_pinned": false,
                     "page": "docs/guides/cpp-only-blueprint-only"
                 }
             ],
@@ -64,15 +101,23 @@
         {
             "pages": [
                 {
+                    "is_external": false,
+                    "is_pinned": false,
                     "page": "docs/reference/cli"
                 },
                 {
+                    "is_external": false,
+                    "is_pinned": false,
                     "page": "docs/reference/surreal-json"
                 },
                 {
+                    "is_external": false,
+                    "is_pinned": false,
                     "page": "docs/reference/surreal-md"
                 },
                 {
+                    "is_external": false,
+                    "is_pinned": false,
                     "page": "docs/reference/tags"
                 }
             ],
@@ -82,11 +127,13 @@
             "pages": [
                 {
                     "is_external": true,
+                    "is_pinned": false,
                     "page": "https://medelfor.com",
                     "title": "Medelfor"
                 },
                 {
                     "is_external": true,
+                    "is_pinned": false,
                     "page": "https://store.medelfor.com",
                     "title": "Medelfor Store"
                 }
@@ -97,11 +144,13 @@
             "pages": [
                 {
                     "is_external": true,
+                    "is_pinned": false,
                     "page": "https://github.com/medelfor/surreal-docs",
                     "title": "Surreal Docs on GitHub"
                 },
                 {
                     "is_external": true,
+                    "is_pinned": false,
                     "page": "https://twitter.com/medelfor",
                     "title": "Follow us on Twitter"
                 }
@@ -135,9 +184,9 @@
     "tag": "public preview",
     "ue": {
         "configuration": "Debug",
-        "root": "C:\\Program Files\\Epic Games\\UE_5.1",
+        "root": "C:\\Program Files\\Epic Games\\UE_5.2",
         "target": ""
     },
     "url": "surrealdocs.com",
-    "version": "1.1.0"
+    "version": "1.1.1"
 }

@@ -20,7 +20,7 @@ Unreal Engine project must be compilable in order for Surreal Docs to generate t
 
 ###### `out` (positional, required) - output directory
 
-The directory to dump the resulting documentation into. Will be created if doesn't exist. It's recommended to use an empty directory or a directory with already dumped documentation. It's not recommended to use the current directory as the `out` directory.
+The directory to dump the resulting documentation into. Will be created if it doesn't exist already. It's recommended to use an empty directory or a directory with already dumped documentation. It's not recommended to use the current directory as the `out` directory.
 
 ###### `-n`, `--non-rich` - disable interactive interface
 
@@ -29,6 +29,12 @@ Disables the rich interface, `generate` provides by default. Useful when the com
 ###### `-c`, `--clean` - purge out directory
 
 Deletes everything in the specified `out` directory before starting to generate docs. Use with caution.
+
+###### `-i`, `--image-threads` - count of image render instances
+
+Default value is `2`.
+
+Parallelize image rendering. Available options are `1`, `2`, `3` and `4`. `3` and `4` are experimental and may yield erroneous results. Use them with caution.
 
 ###### `-d`, `--deploy` - deploy documentation
 

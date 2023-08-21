@@ -18,7 +18,7 @@ Shows help regarding the command.
 
 ### Example
 
-Print out the access token to the CLI's standard input and save it in the vault.
+Print out the access token to the CLI's standard input and save it in the vault. Example is intended for Powershell. Drop the double quotes in case you're using Windows CMD.
 
 ```
 echo "cld_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" | surdocs auth

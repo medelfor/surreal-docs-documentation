@@ -1,6 +1,6 @@
 # Installation and requirements
 
-The latest version of Surreal Docs is `1.1.0`
+The latest version of Surreal Docs is `1.1.1`
 
 We publish releases of new Surreal Docs versions on the "Releases" page in 
 [our GitHub](https://github.com/medelfor/surreal-docs/releases/ "Releases").

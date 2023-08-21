@@ -30,7 +30,7 @@ Makes project public and available to the Internet.
 
 Makes project private and available only to collaborators added by user. [project collaborator add](docs/cli/project-collaborator-add "Project collaborator add") can be used to add collaborators and [project collaborator list](docs/cli/project-collaborator-list "Project collaborator list") to list them.
 
-Note that in order to make a project private, user's Surreal Cloud plan has to allow private hosting. Check out [Surreal Cloud](docs/surreal-cloud) page to find out which ones do allow that.
+Note that in order to make a project private, user's Surreal Cloud plan has to allow private hosting. Check out [Surreal Cloud](https://medelfor.com/products/surreal-cloud) page to find out which ones do allow that.
 
 ### Example
 

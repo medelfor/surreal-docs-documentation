@@ -24,6 +24,8 @@ necessary.
 
 On the same screen you should choose the project modules for which you want to generate documentation.
 
+**IMPORTANT**: you have to choose an *Editor target, since Surreal Docs cannot be run without UE editor.
+
 After everything's finished, please click the "Done" button and wait until
 Surreal Docs will set up your project.
 

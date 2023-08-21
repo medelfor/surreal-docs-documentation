@@ -16,7 +16,7 @@ The following resources can be on quota:
 | `MAX_DOCUMENT_SIZE`  | Maximal size of a single document stored in the Cloud   |
 | `MAX_TOTAL_SIZE`   | Maximal total size of all documents stored in the Cloud |
 
-Specific constraint of each resource depends on your Surreal Cloud type and other factors. You can get some insight on what some resource limitations are on the [Surreal Cloud](docs/surreal-cloud#three-versions-of-surreal-cloud "Different types of Surreal Cloud") page.
+Specific constraint of each resource depends on your Surreal Cloud type and other factors. You can get some insight on what some resource limitations are on the [Surreal Cloud](https://medelfor.com/products/surreal-cloud#pricing "Different types of Surreal Cloud") page.
 
 ### Options
 

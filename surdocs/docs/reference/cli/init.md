@@ -21,6 +21,8 @@ During initialization/reconfiguration `init` offers you to set several settings 
 
 When all setting set as desired, please press the big "Done" button and wait until Surreal Docs finishes initialization.
 
+**IMPORTANT**: you have to choose an *Editor target, since Surreal Docs cannot be run without UE editor.
+
 ``seealso
 title:Note
 The startup of `init` can take some time if the project is big and contains a lot of modules.

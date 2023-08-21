@@ -24,7 +24,7 @@ you help the development process a lot.
 
 ### Access tokens
 
-Access tokens are tokens issued by Surreal Cloud in order to access its resources on your behalf. To use access tokens, and consequently to use commands and options dependent on access tokens, you need to own an active subscription to Surreal Cloud, Surreal Cloud+ or Surreal Cloud Pro. You can find more info about our clouds on [Surreal Cloud](docs/surreal-cloud "Surreal Cloud") page.
+Access tokens are tokens issued by Surreal Cloud in order to access its resources on your behalf. To use access tokens, and consequently to use commands and options dependent on access tokens, you need to own an active subscription to Surreal Cloud, Surreal Cloud+ or Surreal Cloud Pro. You can find more info about our clouds on [Surreal Cloud](https://medelfor.com/products/surreal-cloud "Surreal Cloud") page.
 
 Three following flags are mutually-exclusive. If none of them is presented then Surreal Docs first tries to load a token from the system's vault, then from the environment.
 
@@ -47,7 +47,7 @@ Tries to load the token from the CLI's standard input. Fails if it's not present
 You can pass a token into the CLI's standard input in different ways, e.g. like that:
 
 ```
-echo "cld_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" | surdocs project list
+echo "cld_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" | surdocs --token-stdin project list
 ```
 
 It's not recommended to use this variant, since command line's history most probably will store the command and the access token what cannot be considered secure.
